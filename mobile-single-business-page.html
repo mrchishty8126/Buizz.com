@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dbuizz.com</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="lightbox2-master/lightbox2-master/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="styleSBP.css">
+
+</head>
+
+<body>
+  <div class="mobile-content" style="padding: 0; margin: 0;">
+
+    <!-- Pop-up Form Modal -->
+    <div class="modal fade" id="popUpForm" tabindex="-1" aria-labelledby="popUpFormLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content1 modal-content-form">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eventModalLabel">Get In Touch</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label name-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label phone-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" required>
+              </div>
+              <button type="submit" class="btn btn-primary submit-btn submit-part-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------================ Hero Section ==================---------------->
+    <div id="hero-section" class="container">
+
+      <!-------------------- Image Row ------------------->
+      <div class="row imageRow hide-on-mobile">
+        <!------====== First Column -->
+        <div id="first-col" class="col colLarge">
+          <img src="images/image-jpgforTesting.jpg" class="d-block w-100 gallery-image" alt="Image 1"
+            data-bs-toggle="modal" data-bs-target="#galleryModal">
+        </div>
+
+        <!------====== Second Column -->
+        <div class="col colLarge">
+          <img src="images/city-1150026.jpg" class="d-block w-100 gallery-image" alt="Image 1" data-bs-toggle="modal"
+            data-bs-target="#galleryModal">
+        </div>
+
+        <!------====== Third Column (Nested Rows and Columns) -->
+        <div id="third-col" class="col colLarge col3">
+          <!-- First Row -->
+          <div class="row">
+            <!--- First Column -->
+            <div class="col">
+              <img src="images/image-jpgforTesting.jpg" class="d-block w-100 gallery-image" alt="Image 1"
+                data-bs-toggle="modal" data-bs-target="#galleryModal">
+            </div>
+
+
+            <!-- Second Column -->
+            <div class="col">
+              <img src="images/GooglImg.jpg" class="d-block w-100 gallery-image" alt="Image 1" data-bs-toggle="modal"
+                data-bs-target="#galleryModal">
+            </div>
+          </div>
+
+          <!--- Second Nested Row -->
+          <div class="row">
+            <!-- First Column -->
+            <div class="col">
+              <img src="images/istockphoto-1146883723-612x612.jpgzxzxzx.jpg" class="d-block w-100 gallery-image"
+                alt="Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal">
+            </div>
+            <!-- Second Column (Clickable for Modal) -->
+            <div class="col position-relative">
+              <img src="images/buildings-1851246.jpgfsd.jpg" class="d-block w-100 gallery-image" alt="Image 1">
+              <div
+                class="overlay position-absolute top-0 start-0 w-100 h-100 gallery-image d-flex justify-content-center align-items-center"
+                alt="Image 1" style="background-color: rgba(0, 0, 0, 0.5);" data-bs-toggle="modal"
+                data-bs-target="#galleryModal">
+                View More
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------========== Image Carousel (only mobile view) ===========-------->
+      <div id="carouselExampleSlidesOnly" class="carousel slide hide-on-desktop" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/buildings-1851246.jpgfsd.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/istockphoto-1146883723-612x612.jpgzxzxzx.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image-jpgforTesting.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="images/buildings-1851246.jpgfsd.jpg" class="d-block w-100 gallery-image" alt="Image 1">
+            <div
+              class="overlay position-absolute top-0 start-0 w-100 h-100 gallery-image d-flex justify-content-center align-items-center"
+              alt="Image 1" style="background-color: rgba(0, 0, 0, 0.5);" data-bs-toggle="modal"
+              data-bs-target="#galleryModal">
+              View More
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!---------------- Business Short Info Row ------------------>
+      <div id="business-row" class="row">
+        <div class="col business-col">
+          <h2>Business Name </h2>
+          <div class="d-flex justify-content-start align-items-center" style="height: 24px;">
+            <h6 class="mb-0 me-3 rate-hd-h6">4.1</h6>
+            <div class="star-svg">
+              <img src="SVGs/star-svgrepo-com-filled.svg" width="20" height="20" />
+              <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="20" height="20" />
+              <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="20" height="20" />
+              <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="20" height="20" />
+              <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="20" height="20" />
+
+            </div>
+          </div>
+          <p id="location"><img src="SVGs/results_locat_icon.svg" width="20" height="20" />Aurangabad,
+            Maharashtra,
+            India</p>
+          <div class="cta-inline d-flex justify-content-between">
+            <button id="call-btn" href="#"
+              class="btn btn-primary d-inline-block justify-content-center align-items-center"><i
+                class="fas fa-phone-alt icons"></i>Call</button>
+
+            <button href="#"
+              class="btn btn-primary cta-btns chat-btn d-inline-block justify-content-center align-items-center"><img
+                src="SVGs/new_whatsapp.svg" class="business-svgs" width="20" height="20" />Chat</button>
+
+            <button id="rate-btn" href="#"
+              class="btn btn-primary cta-btns d-inline-block justify-content-center align-items-center"><img
+                src="SVGs/badge-star_icon.svg" class="business-svgs" width="20" height="20" />Rate</button>
+
+            <button class="btn btn-primary cta-btns d-inline-block justify-content-center align-items-center share-btn"
+              data-bs-toggle="modal" data-bs-target="#shareModal">
+              <img src="SVGs/new-share2_blue.svg" class="business-svgs" width="20" height="20" />Share
+            </button>
+
+            <button href="#"
+              class="btn btn-primary cta-btns d-inline-block justify-content-center align-items-center like-btn">
+              <img src="SVGs/vend_heart_favourite_icon_blue.svg" class="business-svg-heart" width="20" height="20" />
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <!--========== Image Gallery Modal ===========-->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+        <div class="modal-content img-gallery-modal">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModalLabel" style="border-bottom: 1px solid #838383;">Gallery</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Gallery Grid -->
+            <div class="container-fluid">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3 img-grid-row">
+                <!-- Images with data-bs-toggle and data-bs-target attributes to trigger the carousel -->
+                <div class="col-6 grid-images">
+                  <a class="example-image-link" href="images/image-jpgforTesting.jpg" data-lightbox="example-set"><img
+                      class="example-image" src="images/image-jpgforTesting.jpg" alt="" /></a>
+                </div>
+                <div class="col-6 grid-images">
+                  <a class="example-image-link" href="images/image-jpgforTesting.jpg" data-lightbox="example-set"><img
+                      class="example-image" src="images/image-jpgforTesting.jpg" alt="" /></a>
+                </div>
+                <div class="col-6 grid-images">
+                  <a class="example-image-link" href="images/aoraki-90388.jpg" data-lightbox="example-set"><img
+                      class="example-image" src="images/aoraki-90388.jpg" alt="" /></a>
+                </div>
+                <div class="col-6 grid-images">
+                  <a class="example-image-link" href="images/alley-3453557.jpg" data-lightbox="example-set"><img
+                      class="example-image" src="images/alley-3453557.jpg" alt="" /></a>
+                </div>
+                <div class="col-6 grid-images">
+                  <a class="example-image-link" href="images/black-steel-lamp-post-1070945.jpg"
+                    data-lightbox="example-set"><img class="example-image"
+                      src="images/black-steel-lamp-post-1070945.jpg" alt="" /></a>
+                </div>
+
+                <!-- Repeat for other images, ensuring each has a unique src -->
+                <!-- ... -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!------------------------------------================= tabs Container DIV ==================---------------------------------------->
+    <div class="tab-container">
+      <nav id="quick-nav" class="sticky-top">
+        <div class="nav nav-tabs categories-title" id="nav-tab" role="tablist">
+
+          <button class="nav-link active transparenttabs-link" id="nav-maincont-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-maincont" type="button" role="tab" aria-controls="nav-maincont"
+            aria-selected="true">Overview</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-sidebar-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-sidebar" type="button" role="tab" aria-controls="nav-sidebar"
+            aria-selected="false">Sidebar</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-product-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-product" type="button" role="tab" aria-controls="nav-product"
+            aria-selected="false">Products</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-photo-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-photo" type="button" role="tab" aria-controls="nav-photo"
+            aria-selected="false">Photos</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-services-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-services" type="button" role="tab" aria-controls="nav-services"
+            aria-selected="false">Services</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-event-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-event" type="button" role="tab" aria-controls="nav-event"
+            aria-selected="false">Events</button>
+
+          <button class="nav-link transparenttabs-link" id="nav-review-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
+            aria-selected="false">Reviews</button>
+
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade" id="nav-sidebar" role="tabpanel" aria-labelledby="nav-sidebar-tab">
+          <!-- Sidebar section content -->
+          <div id="sidebar-colm" class="sidebar-content">
+            <!-- Sidebar Content -->
+            <!-- Repeat this div for each row -->
+
+            <div class="timing-div">
+              <h6>Timing</h6>
+              <p>Mon - Sun -> 11:00 am - 11:00 pm</p>
+            </div>
+
+            <div class="address-div">
+              <h6>Address</h6>
+              <p>B, Jamuna Darshan Co-operative Housing Society, S V Road, Natakwala Lane, Borivali West, Mumbai -
+                400092
+                (Opposite Shimpoli Road, N R Karode Marg)</p>
+            </div>
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det_enquiry_icon_blue.svg" class="side-bar-svg" width="22" height="22" />Send
+              Enquiry
+              by Email
+            </button>
+
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/new_smsemail_icon_blue.svg" class="side-bar-svg" width="22" height="22" />Get info
+              via
+              SMS/Email
+            </button>
+
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/new-share2_blue.svg" class="side-bar-svg" width="22" height="22" />Share This
+            </button>
+
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det-ratethis_blue.svg" class="side-bar-svg" width="22" height="22" />Tap to Rate
+            </button>
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det-web_blue.svg" class="side-bar-svg" width="22" height="22" />Visit Our Website
+            </button>
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det-facebk_blue.svg" class="side-bar-svg" width="22" height="22" />Facebook
+            </button>
+
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det-twitter_blue.svg" class="side-bar-svg" width="22" height="22" />Twitter
+            </button>
+
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/det-instagram_blue.svg" class="side-bar-svg" width="22" height="22" />Instagram
+            </button>
+
+            <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+              <img src="SVGs/gst_icon_blue.svg" class="side-bar-svg" width="22" height="22" />GSTIN :
+              27AAOFH3755P1ZK
+            </button>
+
+            <!-- End Sidebar Content -->
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab">
+          <!-- Products section content -->
+          <div class="product-cont mt-0" style="padding-bottom: 115px;">
+            <h3 style="margin-bottom: 20px;">Products </h3>
+
+            <div class="row d-flex justify-content-center">
+              <!-- Product Items Row1 -->
+              <!-- Repeat this div for each product -->
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                          data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                          data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                          data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                          data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Product Items Row1 -->
+            </div>
+
+            <div class="row  d-flex justify-content-center">
+              <!-- Product Items Row2 -->
+              <!-- Repeat this div for each product -->
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                          data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                          data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                          data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="col-lg-3 col-md-4 col-6 product-card">
+                <div class="card-content">
+                  <div class="pb-1">
+                    <div class="mb-2 product-image text-center">
+                      <a>
+                        <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                          data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                      </a>
+                    </div>
+                    <div class="mb-1">
+                      <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod Name</a>
+                    </div>
+                    <h5 class="mb-2 product-item__title">
+                      <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                        Description Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                    </h5>
+                    <div class="mb-1 d-flex justify-content-between">
+                      <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                        <!-- Place the .del div above the .ins div -->
+                        <span class="ins">₹1999</span>
+                        <span class="del">₹2299</span>
+                      </div>
+                      <!-- Add Button -->
+                      <div class="prod-add-btn">
+                        <a href="#" class="btn btn-add-cart">Add</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- End Product Items Row2 -->
+            </div>
+
+            <!-- View All Button -->
+            <div class="d-flex justify-content-center">
+              <button class="btn view-all-btn" data-bs-toggle="modal" data-bs-target="#productsModal">View
+                All</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+          <!-- Photos section content -->
+          <div class="photo-cont">
+            <h3 style="margin-bottom: 13px;">Photos </h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 gallery d-flex justify-content-center">
+              <div class="col-6 photo-col">
+                <img src="images/books-1655783_1920.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                  data-bs-toggle="modal" data-bs-target="#galleryModal">
+              </div>
+              <div class="col-6 photo-col">
+                <img src="images/prometey-sanchez-noskov-c6M7AoevSXE-unsplash.jpg" class="img-fluid rounded photo-img"
+                  alt="Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal">
+              </div>
+              <div class="col-6 photo-col">
+                <img src="images/aoraki-90388.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                  data-bs-toggle="modal" data-bs-target="#galleryModal">
+              </div>
+              <div class="col-6 photo-col">
+                <img src="images/bgg.jpg" class="img-fluid rounded photo-img" alt="Image 1" data-bs-toggle="modal"
+                  data-bs-target="#galleryModal">
+              </div>
+              <div class="col-6 photo-col">
+                <img src="images/istockphoto-1146883723-612x612.jpgzxzxzx.jpg" class="img-fluid rounded photo-img"
+                  alt="Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal">
+              </div>
+              <div class="col-6 photo-col">
+                <img src="images/image-jpgforTesting.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                  data-bs-toggle="modal" data-bs-target="#galleryModal">
+              </div>
+              <!-- Add more images as needed -->
+            </div>
+            <!-- View All Button -->
+            <div class="d-flex justify-content-center">
+              <button class="btn show-all-btn" data-bs-toggle="modal" data-bs-target="#galleryModal">Show
+                All Photos</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-services-tab">
+          <!-- Service section content -->
+          <div class="py-5 service-cont">
+            <h3 style="margin-bottom: 20px;">Services</h3>
+            <div class="row">
+              <div class="service-box col-md-4">
+                <ul class="service-ul">
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Home Delivery</a>
+                    </div>
+                  </li>
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Catering
+                        Service</a>
+                    </div>
+                  </li>
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Serves Beer</a>
+                    </div>
+                  </li>
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Delivery Service</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="service-box col-md-4">
+                <ul class="service-ul">
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Home Delivery</a>
+                    </div>
+                  </li>
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Catering
+                        Service</a>
+                    </div>
+                  </li>
+                  <li class="service-item">
+                    <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart" width="15"
+                        height="15" /><a href="#" class="">Serves Beer</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="service-box col-md-4">
+              </div>
+            </div>
+            <!-- <div class="d-flex justify-content-center">
+              <button class="btn view-serv-btn">View All</button>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-event" role="tabpanel" aria-labelledby="nav-event-tab">
+          <!-- Sidebar section content -->
+          <div class="py-5 event-cont">
+            <h3 style="margin-bottom: 20px;">Events</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Event Card -->
+              <div class="col-sm-6">
+                <div class="card event-card">
+                  <img src="images/Nature-Sky-Mountain-Background.jpg" class="card-img-top event-img" alt="Event">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Event Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the
+                      card's content.</p>
+                    <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                      Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card event-card">
+                  <img src="images/ford-498244.jpg" class="card-img-top event-img" alt="Event">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Event Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the
+                      card's content.</p>
+                    <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                      Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card event-card">
+                  <img src="images/street-381227.jpg" class="card-img-top event-img" alt="Event">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Event Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the
+                      card's content.</p>
+                    <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                      Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- More event cards... -->
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+          <!-- Sidebar section content -->
+          <div class="review-cont">
+            <div class="row">
+              <h3 style="margin-bottom: 20px;">Reviews & Ratings</h3>
+              <div class="col-md-1 col-1" id="col-md-1">
+                <p class="review-p">4.1</p>
+              </div>
+              <div class="col-md-11 col-11" id="col-md-11">
+                <h2 class="review-h2">2,197 Reviews</h2>
+                <p class="col-md-11-p">We have Good Reviews and Rating.</p>
+              </div>
+            </div>
+
+            <div class="review-divs">
+              <h3 style="margin-bottom: 0;">Finish your review</h3>
+              <div class="d-flex align-items-center" id="rating-add-rv-div">
+                <div class="star-rating1">
+                  <form class="rating">
+                    <label>
+                      <input type="radio" name="stars" value="1" />
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="2" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="3" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="4" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="stars" value="5" />
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                      <span class="icon">★</span>
+                    </label>
+                  </form>
+                </div>
+                <button class="btn ms-2 add-review-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Add
+                  Review</button>
+              </div>
+            </div>
+
+            <!-- User Review Heading -->
+            <div class="review-divs">
+              <h3 class="mb-0 rv-h3">User Reviews</h3>
+            </div>
+
+
+            <!-- User 1 -->
+            <div class="first-user-detail">
+              <div class="row">
+                <div class="d-flex align-items-center col-8">
+                  <div>
+                    <h4 class="user-name">First User</h4>
+                    <div class="user-star-svg">
+                      <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end review-date col-4">
+                  <span>5 Oct 2023</span>
+                </div>
+              </div>
+              <div class="fixed-height-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                  interdum,
+                  nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                  door
+                  sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                  Ipsam
+                  nostrum qui tempore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                  nulla
+                  et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl
+                  est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                  asperiores
+                  dolorum earum. Ipsam nostrum qui temporererum.
+                </p>
+              </div>
+              <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+            </div>
+
+
+            <!-- User 2 -->
+            <div class="user-detail">
+              <div class="row">
+                <div class="d-flex align-items-center col-8">
+                  <div>
+                    <h4 class="user-name">User Name</h4>
+                    <div class="user-star-svg">
+                      <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end review-date col-4">
+                  <span>5 Oct 2023</span>
+                </div>
+              </div>
+              <div class="fixed-height-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                  interdum,
+                  nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                  dolor
+                  sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                  Ipsam
+                  nostrum qui tempore Lorem ipsum door sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                  nulla
+                  et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl
+                  est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                  asperiores
+                  dolorum earum. Ipsam nostrum qui temporererum.
+                </p>
+              </div>
+              <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+            </div>
+
+            <!-- User 3 -->
+            <div class="user-detail">
+              <div class="row">
+                <div class="d-flex align-items-center col-8">
+                  <div>
+                    <h4 class="user-name">User Name</h4>
+                    <div class="user-star-svg">
+                      <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                      <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end review-date col-4">
+                  <span>5 Oct 2023</span>
+                </div>
+              </div>
+              <div class="fixed-height-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                  interdum,
+                  nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                  dolor
+                  sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                  Ipsam
+                  nostrum qui tempore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                  nulla
+                  et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl
+                  est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                  asperiores
+                  dolorum earum. Ipsam nostrum qui temporererum.
+                </p>
+              </div>
+              <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+            </div>
+
+
+
+            <!-- View All Btn -->
+            <div class="d-flex justify-content-center read-all-div">
+              <button class="btn read-all-btn">Read All Reviews</button>
+            </div>
+            <!-- REVIEW container END -->
+          </div>
+        </div>
+
+
+
+
+
+        <!------------------------------------================= The MAIN Container DIV ==================---------------------------------------->
+        <div class="container main-container tab-pane fade show active" id="nav-maincont" role="tabpanel"
+          aria-labelledby="nav-maincont-tab">
+
+
+          <div id="main-row" class="row">
+            <!-----------------================= The Sections Container DIV ==================---------------->
+            <div id="main-div" class="col">
+
+              <!----------------============== Sidebar Section ===============---------------->
+              <div id="sidebar-colm" class="sidebar-content">
+                <!-- Sidebar Content -->
+                <!-- Repeat this div for each row -->
+
+                <div class="timing-div">
+                  <h6>Timing</h6>
+                  <p>Mon - Sun -> 11:00 am - 11:00 pm</p>
+                </div>
+
+                <div class="address-div">
+                  <h6>Address</h6>
+                  <p>B, Jamuna Darshan Co-operative Housing Society, S V Road, Natakwala Lane, Borivali West, Mumbai -
+                    400092
+                    (Opposite Shimpoli Road, N R Karode Marg)</p>
+                </div>
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det_enquiry_icon_blue.svg" class="side-bar-svg" width="22" height="22" />Send
+                  Enquiry
+                  by Email
+                </button>
+
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/new_smsemail_icon_blue.svg" class="side-bar-svg" width="22" height="22" />Get
+                  info
+                  via
+                  SMS/Email
+                </button>
+
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/new-share2_blue.svg" class="side-bar-svg" width="22" height="22" />Share This
+                </button>
+
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det-ratethis_blue.svg" class="side-bar-svg" width="22" height="22" />Tap to
+                  Rate
+                </button>
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det-web_blue.svg" class="side-bar-svg" width="22" height="22" />Visit Our
+                  Website
+                </button>
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det-facebk_blue.svg" class="side-bar-svg" width="22" height="22" />Facebook
+                </button>
+
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det-twitter_blue.svg" class="side-bar-svg" width="22" height="22" />Twitter
+                </button>
+
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/det-instagram_blue.svg" class="side-bar-svg" width="22" height="22" />Instagram
+                </button>
+
+                <button href="#" class="btn d-flex w-100 align-items-center sidebar-btn">
+                  <img src="SVGs/gst_icon_blue.svg" class="side-bar-svg" width="22" height="22" />GSTIN :
+                  27AAOFH3755P1ZK
+                </button>
+
+                <!-- End Sidebar Content -->
+              </div>
+
+
+              <!---------------============= Products Section ==============------------->
+              <div class="product-cont">
+                <h3 style="margin-bottom: 20px;">Products </h3>
+
+                <div class="row d-flex justify-content-center">
+                  <!-- Product Items Row1 -->
+                  <!-- Repeat this div for each product -->
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- End Product Items Row1 -->
+                </div>
+
+                <div class="row  d-flex justify-content-center">
+                  <!-- Product Items Row2 -->
+                  <!-- Repeat this div for each product -->
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                              data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                              data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                              data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Product -->
+                  <div class="col-lg-3 col-md-4 col-6 product-card">
+                    <div class="card-content">
+                      <div class="pb-1">
+                        <div class="mb-2 product-image text-center">
+                          <a>
+                            <img src="images/Nature-Sky-Mountain-Background.jpg" alt="Image Description"
+                              data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                          </a>
+                        </div>
+                        <div class="mb-1">
+                          <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                            Name</a>
+                        </div>
+                        <h5 class="mb-2 product-item__title">
+                          <a class="product-description" data-bs-toggle="modal" data-bs-target="#quickViewModal">Product
+                            Description Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                        </h5>
+                        <div class="mb-1 d-flex justify-content-between">
+                          <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <!-- Place the .del div above the .ins div -->
+                            <span class="ins">₹1999</span>
+                            <span class="del">₹2299</span>
+                          </div>
+                          <!-- Add Button -->
+                          <div class="prod-add-btn">
+                            <a href="#" class="btn btn-add-cart">Add</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- End Product Items Row2 -->
+                </div>
+
+                <!-- View All Button -->
+                <div class="d-flex justify-content-center">
+                  <button class="btn view-all-btn" data-bs-toggle="modal" data-bs-target="#productsModal">View
+                    All</button>
+                </div>
+              </div>
+
+
+
+              <!---------------============= Photos Section ==============------------->
+              <div class="photo-cont">
+                <h3 style="margin-bottom: 13px;">Photos </h3>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 gallery d-flex justify-content-center">
+                  <div class="col-6 photo-col">
+                    <img src="images/books-1655783_1920.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                      data-bs-toggle="modal" data-bs-target="#galleryModal">
+                  </div>
+                  <div class="col-6 photo-col">
+                    <img src="images/prometey-sanchez-noskov-c6M7AoevSXE-unsplash.jpg"
+                      class="img-fluid rounded photo-img" alt="Image 1" data-bs-toggle="modal"
+                      data-bs-target="#galleryModal">
+                  </div>
+                  <div class="col-6 photo-col">
+                    <img src="images/aoraki-90388.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                      data-bs-toggle="modal" data-bs-target="#galleryModal">
+                  </div>
+                  <div class="col-6 photo-col">
+                    <img src="images/bgg.jpg" class="img-fluid rounded photo-img" alt="Image 1" data-bs-toggle="modal"
+                      data-bs-target="#galleryModal">
+                  </div>
+                  <div class="col-6 photo-col">
+                    <img src="images/istockphoto-1146883723-612x612.jpgzxzxzx.jpg" class="img-fluid rounded photo-img"
+                      alt="Image 1" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                  </div>
+                  <div class="col-6 photo-col">
+                    <img src="images/image-jpgforTesting.jpg" class="img-fluid rounded photo-img" alt="Image 1"
+                      data-bs-toggle="modal" data-bs-target="#galleryModal">
+                  </div>
+                  <!-- Add more images as needed -->
+                </div>
+                <!-- View All Button -->
+                <div class="d-flex justify-content-center">
+                  <button class="btn show-all-btn" data-bs-toggle="modal" data-bs-target="#galleryModal">Show
+                    All Photos</button>
+                </div>
+              </div>
+
+
+              <!---------------============= Services Section ==============------------->
+              <div class="py-5 service-cont">
+                <h3 style="margin-bottom: 20px;">Services</h3>
+                <div class="row">
+                  <div class="service-box col-md-4">
+                    <ul class="service-ul">
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Home Delivery</a>
+                        </div>
+                      </li>
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Catering
+                            Service</a>
+                        </div>
+                      </li>
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Serves Beer</a>
+                        </div>
+                      </li>
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Delivery Service</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="service-box col-md-4">
+                    <ul class="service-ul">
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Home Delivery</a>
+                        </div>
+                      </li>
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Catering
+                            Service</a>
+                        </div>
+                      </li>
+                      <li class="service-item">
+                        <div class="service-list"><img src="SVGs/det-right-tick.svg" class="business-svg-heart"
+                            width="15" height="15" /><a href="#" class="">Serves Beer</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="service-box col-md-4">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="btn view-serv-btn">View All</button>
+                </div>
+              </div>
+
+
+
+              <!---------------============= Events Section ==============------------->
+              <div class="py-5 event-cont">
+                <h3 style="margin-bottom: 20px;">Events</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Event Card -->
+                  <div class="col-sm-6">
+                    <div class="card event-card">
+                      <img src="images/Nature-Sky-Mountain-Background.jpg" class="card-img-top event-img" alt="Event">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Event Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of
+                          the
+                          card's content.</p>
+                        <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                          Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card event-card">
+                      <img src="images/ford-498244.jpg" class="card-img-top event-img" alt="Event">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Event Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of
+                          the
+                          card's content.</p>
+                        <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                          Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card event-card">
+                      <img src="images/street-381227.jpg" class="card-img-top event-img" alt="Event">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Event Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of
+                          the
+                          card's content.</p>
+                        <button class="btn event-btn" data-bs-toggle="modal" data-bs-target="#eventModal">Participate
+                          Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- More event cards... -->
+                </div>
+              </div>
+
+
+
+
+
+              <!---------------============= Review Section ==============------------->
+              <div class="review-cont">
+                <div class="row">
+                  <h3 style="margin-bottom: 20px;">Reviews & Ratings</h3>
+                  <div class="col-md-1 col-1" id="col-md-1">
+                    <p class="review-p">4.1</p>
+                  </div>
+                  <div class="col-md-11 col-11" id="col-md-11">
+                    <h2 class="review-h2">2,197 Reviews</h2>
+                    <p class="col-md-11-p">We have Good Reviews and Rating.</p>
+                  </div>
+                </div>
+
+                <div class="review-divs">
+                  <h3 style="margin-bottom: 0;">Finish your review</h3>
+                  <div class="d-flex align-items-center" id="rating-add-rv-div">
+                    <div class="star-rating1">
+                      <form class="rating">
+                        <label>
+                          <input type="radio" name="stars" value="1" />
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="2" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="3" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="4" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                        <label>
+                          <input type="radio" name="stars" value="5" />
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                          <span class="icon">★</span>
+                        </label>
+                      </form>
+                    </div>
+                    <button class="btn ms-2 add-review-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Add
+                      Review</button>
+                  </div>
+                </div>
+
+                <!-- User Review Heading -->
+                <div class="review-divs">
+                  <h3 class="mb-0 rv-h3">User Reviews</h3>
+                </div>
+
+
+                <!-- User 1 -->
+                <div class="first-user-detail">
+                  <div class="row">
+                    <div class="d-flex align-items-center col-8">
+                      <div>
+                        <h4 class="user-name">First User</h4>
+                        <div class="user-star-svg">
+                          <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end review-date col-4">
+                      <span>5 Oct 2023</span>
+                    </div>
+                  </div>
+                  <div class="fixed-height-paragraph">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                      interdum,
+                      nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                      door
+                      sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                      Ipsam
+                      nostrum qui tempore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                      imperdiet,
+                      nulla
+                      et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas
+                      nisl
+                      est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                      asperiores
+                      dolorum earum. Ipsam nostrum qui temporererum.
+                    </p>
+                  </div>
+                  <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+                </div>
+
+
+                <!-- User 2 -->
+                <div class="user-detail">
+                  <div class="row">
+                    <div class="d-flex align-items-center col-8">
+                      <div>
+                        <h4 class="user-name">User Name</h4>
+                        <div class="user-star-svg">
+                          <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end review-date col-4">
+                      <span>5 Oct 2023</span>
+                    </div>
+                  </div>
+                  <div class="fixed-height-paragraph">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                      interdum,
+                      nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                      dolor
+                      sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                      Ipsam
+                      nostrum qui tempore Lorem ipsum door sit amet, consectetur adipiscing elit. Phasellus imperdiet,
+                      nulla
+                      et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas
+                      nisl
+                      est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                      asperiores
+                      dolorum earum. Ipsam nostrum qui temporererum.
+                    </p>
+                  </div>
+                  <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+                </div>
+
+                <!-- User 3 -->
+                <div class="user-detail">
+                  <div class="row">
+                    <div class="d-flex align-items-center col-8">
+                      <div>
+                        <h4 class="user-name">User Name</h4>
+                        <div class="user-star-svg">
+                          <img src="SVGs/star-svgrepo-com-filled.svg" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-filled.svg" class="star-align" width="21" height="21" />
+                          <img src="SVGs/star-svgrepo-com-gray.svg" class="star-align" width="21" height="21" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end review-date col-4">
+                      <span>5 Oct 2023</span>
+                    </div>
+                  </div>
+                  <div class="fixed-height-paragraph">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                      interdum,
+                      nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.Lorem ipsum
+                      dolor
+                      sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa asperiores dolorum earum.
+                      Ipsam
+                      nostrum qui tempore Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                      imperdiet,
+                      nulla
+                      et dictum interdum,nisi lorem egestas vitae scelerisque enim ligula venenatis dolor. Maecenas
+                      nisl
+                      est.Lorem ipsum dolor sit amet consecteturadipisicing elit. Nostrum pariatur maxime culpa
+                      asperiores
+                      dolorum earum. Ipsam nostrum qui temporererum.
+                    </p>
+                  </div>
+                  <span onclick="toggleReadMore(this)" class="read-more">Read more</span>
+                </div>
+
+
+
+                <!-- View All Btn -->
+                <div class="d-flex justify-content-center read-all-div">
+                  <button class="btn read-all-btn">Read All Reviews</button>
+                </div>
+                <!-- REVIEW container END -->
+              </div>
+
+
+
+
+
+
+              <!------------============= The Sections CONTAINER DIV END ===========----------->
+            </div>
+
+          </div>
+          <!------------------------------------================= The MAIN Container DIV END ==================---------------------------------------->
+        </div>
+      </div>
+
+
+
+      <!-----------------======== Bottom Bar Section ========---------------->
+      <div class="container-fluid">
+        <!-- Your main content goes here -->
+        <div class="bottom-bar d-flex justify-content-between align-items-center" id="bottomBar">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12 d-flex justify-content-center align-items-center bottom-bar-btn-col">
+                <button id="bottomB-call-btn" href="#"
+                  class="btn d-inline-block justify-content-center align-items-center"><i
+                    class="fas fa-phone-alt icons"></i> 91125 36723</button>
+
+                <button href="#"
+                  class=" bottomB-btns d-inline-block justify-content-center align-items-center chat-btn"><img
+                    src="SVGs/new_whatsapp.svg" class="bottom-bar-svgs" width="22" height="22" /></i></button>
+
+                <!-- share Button trigger -->
+                <button type="button"
+                  class="bottomB-btns d-inline-block justify-content-center align-items-center share-btn"
+                  data-bs-toggle="modal" data-bs-target="#shareModal">
+                  <img src="SVGs/new-share2_blue.svg" class="bottom-bar-svgs" width="22" height="22" />
+                </button>
+
+                <button href="#"
+                  class=" bottomB-btns d-inline-block justify-content-center align-items-center like-btn2">
+                  <img src="SVGs/vend_heart_favourite_icon_blue.svg" class="bottom-svg-heart" width="22"
+                    height="22" /></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--------- Review Login Form Modal ----------->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-form">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Welcome</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="nameInput" class="form-label name-label">Name</label>
+                  <input type="text" class="form-control" id="nameInput" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phoneInput" class="form-label phone-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phoneInput" required>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn login-modal-btn" data-bs-toggle="modal"
+                  data-bs-target="#reviewModal">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- add Review and Star rating Modal -->
+      <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-form">
+            <div class="modal-header add-review-modal-hdr">
+              <h5 class="modal-title" id="reviewModalLabel">Your Review</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Star Rating Form -->
+              <div class="star-rating1 add-stars">
+                <form class="rating rating-modal">
+                  <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                  </label>
+                </form>
+              </div>
+
+              <!-- Text Input Area -->
+              <div class="mb-3">
+                <label for="reviewText" class="form-label add-review-label">Comment Here</label>
+                <textarea class="form-control" id="reviewText" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer" id="modal-footer-add-RS">
+              <button type="button" class="btn btn-primary submit-btn submit-star-rv">Submit Review</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!------------ Event Modal Form ----------->
+      <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-form">
+            <div class="modal-header">
+              <h5 class="modal-title" id="eventModalLabel">Participate</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label name-label">Name:</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label phone-label">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="tickets" class="form-label ticket-label">Number of Tickets:</label>
+                  <input type="number" class="form-control" id="tickets" required>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn submit-part-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!---------------- Quick View Modal ----------------->
+      <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered"> <!-- Use modal-lg for larger modal -->
+          <div class="modal-content quick-vw-modal-content">
+            <div class="modal-header qk-vw-header">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+
+                <!-- Left side - Product Image -->
+                <div class="col-md-6">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Thumbnail Images -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1">
+                        <img src="images/product-big-01.png" alt="Thumbnail 1" class="d-block w-100 thumbnail-imgs">
+                      </button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="qk-vw-mid-img-btn" aria-label="Slide 2">
+                        <img src="images/product-big-02.png" alt="Thumbnail 2" class="d-block w-100 thumbnail-imgs">
+                      </button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        <img src="images/product-big-03.png" alt="Thumbnail 3" class="d-block w-100 thumbnail-imgs">
+                      </button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                        <img src="images/product-04.png" alt="Thumbnail 4" class="d-block w-100 thumbnail-imgs">
+                      </button>
+                    </div>
+
+                    <!-- Carousel Images -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/product-big-01.png" class="d-block w-100 img-quick-view" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/product-big-02.png" class="d-block w-100 img-quick-view" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/product-big-03.png" class="d-block w-100 img-quick-view" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/product-04.png" class="d-block w-100 img-quick-view" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="prev">
+                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span> -->
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide="next">
+                      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span> -->
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Right side - Product Information -->
+                <div class="col-md-6 prod-info-qk-vw">
+                  <h5 class="product-name quick-vw-pname">Prod Name</h5>
+                  <p class="qk-vw-catg">Headphones</p>
+                  <div class="product-price mb-3">
+                    <span class="del">₹2299</span>
+                    <span class="ins">₹1999</span>
+                  </div>
+                  <p class="product-description-qk-vw">Product Description Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Expedita, vero. Voluptatum, explicaboLorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Expedita, vero. Voluptatum, explicabo.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita, vero.</p>
+                  <!-- Button -->
+                  <div class="row">
+                    <div class="pro-qty col-6 d-flex align-items-center">
+                      <span class="dec btn qtybtn">-</span>
+                      <input type="text" value="1">
+                      <span class="inc btn qtybtn">+</span>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn quick-vw-add-btn">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Share Button Modal -->
+      <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content share-modal">
+            <div class="modal-header">
+              <h5 class="modal-title" id="shareModalLabel">Share</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Share buttons with added margin for spacing -->
+              <div class="d-flex justify-content-between flex-wrap">
+                <button class="btn btn-primary m-2"><i class="fab fa-facebook-f"></i></button>
+                <button class="btn btn-info m-2"><i class="fab fa-twitter"></i></button>
+                <button class="btn btn-danger m-2"><i class="fab fa-pinterest-p"></i></button>
+                <button class="btn btn-success m-2"><i class="fab fa-whatsapp"></i></button>
+                <button class="btn btn-secondary m-2 linked-in"><i class="fab fa-linkedin-in"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--========== Products Gallery Modal =============-->
+      <div class="modal fade" id="productsModal" tabindex="-1" aria-labelledby="productsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content product-modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productsModalLabel">All Products</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Products by Category -->
+              <!-- Repeat this section for each category -->
+              <nav>
+                <div class="nav nav-tabs categories-title" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-shoes-tab" data-bs-toggle="tab" data-bs-target="#nav-shoes"
+                    type="button" role="tab" aria-controls="nav-shoes" aria-selected="true">Shoes</button>
+                  <button class="nav-link" id="nav-perfumes-tab" data-bs-toggle="tab" data-bs-target="#nav-perfumes"
+                    type="button" role="tab" aria-controls="nav-perfumes" aria-selected="false">Perfumes</button>
+                  <button class="nav-link" id="nav-bags-tab" data-bs-toggle="tab" data-bs-target="#nav-bags"
+                    type="button" role="tab" aria-controls="nav-bags" aria-selected="false">Bags</button>
+                </div>
+              </nav>
+              <div class="tab-content catg-tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active catg-shoes" id="nav-shoes" role="tabpanel"
+                  aria-labelledby="nav-shoes-tab">
+
+                  <div class="row mb-3">
+                    <!-- Category Shoes Items Row1 -->
+                    <!-- Repeat this div for each product -->
+                    <!-- Product -->
+                    <div class="col-lg-3 col-md-4 col-6 product-card">
+                      <div class="card-content">
+                        <div class="pb-1">
+                          <div class="mb-2 product-image text-center">
+                            <a>
+                              <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                            </a>
+                          </div>
+                          <div class="mb-1">
+                            <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                              Name</a>
+                          </div>
+                          <h5 class="mb-2 product-item__title">
+                            <a class="product-description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">Product
+                              Description Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                          </h5>
+                          <div class="mb-1 d-flex justify-content-between">
+                            <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                              <!-- Place the .del div above the .ins div -->
+                              <span class="ins">₹1999</span>
+                              <span class="del">₹2299</span>
+                            </div>
+                            <!-- Add Button -->
+                            <div class="prod-add-btn">
+                              <a href="#" class="btn btn-add-cart">Add</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <!-- End Product Items Row1 -->
+                  </div>
+
+                  <!-- Category Shoes End -->
+                </div>
+
+                <!-- ----------------- -->
+                <div class="tab-pane fade catg-perfumes" id="nav-perfumes" role="tabpanel"
+                  aria-labelledby="nav-perfumes-tab">
+
+                  <div class="row mb-3">
+                    <!-- Category Perfumes Items Row1 -->
+                    <!-- Repeat this div for each product -->
+                    <!-- Product -->
+                    <div class="col-lg-3 col-md-4 col-6 product-card">
+                      <div class="card-content">
+                        <div class="pb-1">
+                          <div class="mb-2 product-image text-center">
+                            <a>
+                              <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                            </a>
+                          </div>
+                          <div class="mb-1">
+                            <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                              Name</a>
+                          </div>
+                          <h5 class="mb-2 product-item__title">
+                            <a class="product-description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">Product
+                              Description Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                          </h5>
+                          <div class="mb-1 d-flex justify-content-between">
+                            <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                              <!-- Place the .del div above the .ins div -->
+                              <span class="ins">₹1999</span>
+                              <span class="del">₹2299</span>
+                            </div>
+                            <!-- Add Button -->
+                            <div class="prod-add-btn">
+                              <a href="#" class="btn btn-add-cart">Add</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <!-- Category Perfumes Row1 End -->
+                  </div>
+
+                  <!-- Category Perfumes End -->
+                </div>
+
+                <!-- ----------------- -->
+                <div class="tab-pane fade catg-bags" id="nav-bags" role="tabpanel" aria-labelledby="nav-bags-tab">
+
+                  <div class="row mb-3">
+                    <!-- Category Bags Items Row1 -->
+                    <!-- Repeat this div for each product -->
+                    <!-- Product -->
+                    <div class="col-lg-3 col-md-4 col-6 product-card">
+                      <div class="card-content">
+                        <div class="pb-1">
+                          <div class="mb-2 product-image text-center">
+                            <a>
+                              <img src="images/moisturizer.jpg" alt="Image Description" data-bs-toggle="modal"
+                                data-bs-target="#quickViewModal">
+                            </a>
+                          </div>
+                          <div class="mb-1">
+                            <a class="product-name" data-bs-toggle="modal" data-bs-target="#quickViewModal">Prod
+                              Name</a>
+                          </div>
+                          <h5 class="mb-2 product-item__title">
+                            <a class="product-description" data-bs-toggle="modal"
+                              data-bs-target="#quickViewModal">Product
+                              Description Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Expedita, vero. Voluptatum, explicabo. </a>
+                          </h5>
+                          <div class="mb-1 d-flex justify-content-between">
+                            <div class="product-price" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                              <!-- Place the .del div above the .ins div -->
+                              <span class="ins">₹1999</span>
+                              <span class="del">₹2299</span>
+                            </div>
+                            <!-- Add Button -->
+                            <div class="prod-add-btn">
+                              <a href="#" class="btn btn-add-cart">Add</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- End Product Items Row1 -->
+                  </div>
+
+                  <!-- Category Bags End -->
+                </div>
+                <!-- ----------------- -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="lightbox2-master/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="scriptSBP.js"></script>
+
+</body>
+
+</html>

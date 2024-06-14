@@ -1,0 +1,192 @@
+body {
+    background-color: #f5f5f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #222021;
+    --secondary-color: #066cfa;
+    --bg-color: #a8a8a8e9;
+    --text-color: #555;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-font: "Poppins", sans-serif;
+    --font-primary: "DM Sans", sans-serif;
+    --color-lighter: #F6F7FB;
+    --color-heading: #292930;
+    --color-body: #777777;
+    --color-light: #CBD3D9;
+    --bs-primary: #0d6efd;
+    --bs-primary-dark: #025bd7;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-border-color: #dee2e6;
+    --font-size-b1: 16px;
+    --font-size-b2: 14px;
+    --line-height-b1: 1.7;
+    --h1: 46px;
+    --h2: 36px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 18px;
+}
+.card{
+    margin-top: 15px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border-color: #00000000 !important;
+    box-shadow: 0 2px 6px 0 rgba(67, 89, 113, .12);
+}
+.card-header {
+    color: #566a7f;
+    padding: 24px;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-color: #d9dee3;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-body{
+    padding: 24px;
+}
+.product-cart-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.product-table-heading .title {
+    font-size: 18px;
+    color: #5f7286;
+    font-weight: 500;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.axil-product-table {
+    font-family: var(--font-primary);
+    margin: 0;
+}
+
+.axil-product-table thead {
+    background-color: var(--color-lighter);
+}
+
+.axil-product-table thead th {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: none;
+    color: var(--color-heading);
+    padding: 18px 15px;
+}
+
+.axil-product-table tbody {
+    border-top: none !important;
+}
+.card-header:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.axil-product-table tbody td {
+    border-top: none;
+    border-bottom: 2px solid var(--color-lighter);
+    vertical-align: middle;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-body);
+    min-width: 150px;
+}
+.btn1{
+    border: none !important;
+    background: #f0f8ff00 !important;
+}
+.btn1 a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn1 a:hover {
+    color: var(--bs-primary-dark);
+    text-decoration: underline;;
+}
+.axil-product-table thead th:first-child {
+    border-radius: 6px 0 0 6px;
+}
+.axil-product-table thead th:last-child {
+    border-radius: 0 6px 6px 0;
+}
+/* .axil-product-table tbody td:last-child {
+    text-align: right;
+} */
+
+.currency-symbol {
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .axil-product-table {
+        margin-top: 20px;
+    }
+    .axil-product-table thead {
+        display: none;
+    }
+    .axil-product-table tbody tr {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid var(--color-lighter);
+        margin-bottom: 60px;
+    }
+    .axil-product-table tbody td {
+        font-size: 16px;
+        display: block;
+        text-align: right;
+        padding: 10px 10px 10px 0;
+        position: relative;
+    }
+    .axil-product-table tbody td:before {
+        font-weight: 700;
+        content: attr(data-title) ": ";
+        position: absolute;
+        left: 0;
+        font-size: 16px;  /* Increased font size */
+        color: var(--bs-black);
+    }
+}
+
+@media (max-width: 768px) {
+    .axil-product-table {
+        margin-top: 20px;
+    }
+    .axil-product-table thead {
+        display: none;
+    }
+    .axil-product-table tbody tr {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid var(--color-lighter);
+        margin-bottom: 60px;
+    }
+    .axil-product-table tbody td {
+        font-size: 16px;
+        display: block;
+        text-align: right;
+        padding: 10px 10px 10px 0;
+        position: relative;
+    }
+    .axil-product-table tbody td:before {
+        font-weight: 700;
+        content: attr(data-title) ": ";
+        position: absolute;
+        left: 0;
+        font-size: 16px;  /* Increased font size */
+        color: var(--bs-black);
+    }
+    .btn1 a{
+        font-size: 16px;
+    }
+}

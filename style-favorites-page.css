@@ -1,0 +1,257 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #222021;
+    --secondary-color: #066cfa;
+    --bg-color: #a8a8a8e9;
+    --text-color: #555;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+
+.userinfo_headbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+.userinfo_headbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+.font22 {
+    font-size: 22px;
+}
+.fw500 {
+    font-weight: 500;
+}
+.color111 {
+    color: #111;
+}
+h1, h2, h3, h4, h5, h6 {
+    /* font-size: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ******************* */
+.userinfo_searchbox {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #f2f2f2;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.userinfo_headbox .userinfo_search_input {
+    width: 100%;
+    border: none;
+    height: 100%;
+    background: transparent;
+    padding: 0 40px 0 20px;
+}
+.font16 {
+    font-size: 16px;
+}
+.fw400 {
+    font-weight: 400;
+}
+
+/* ******************* */
+.jdcontainer{
+    padding: 0 137px;
+}
+.searchicon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 4px;
+    right: 4px;
+    background-image: url(SVGs/search_black_icon_magnifier.svg);
+    background-position: center;
+    background-size: 15px;
+    border-radius: 100%;
+    transform: scale(1);
+    transition: all .8s;
+    cursor: pointer;
+}
+.jdicon {
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    flex: none;
+}
+.jdicon, .jdwrapper {
+    display: inline-block;
+}
+.jdicon, img {
+    vertical-align: middle;
+}
+
+/* ******************* */
+
+.jd_favbox {
+    border: 1px solid #f2f2f2;
+    padding: 0 20px;;
+    border-radius: 10px;
+}
+.jd_favbox {
+    border: 1px solid #f2f2f2;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.jd_favli {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0;
+    display: flex;;
+    justify-content: flex-start;
+}
+.jd_favli {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.bluefill_animate:hover, .grayfill_animate:hover, .anchor:hover, .pointer, a {
+    cursor: pointer;
+}
+
+.jd_favli .jd_fav_img {
+    height: 120px;
+    border-radius: 10px;
+    flex-basis: 120px;
+    overflow: hidden;
+}
+
+.jd_fav_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.jd_fav_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+}
+.jdicon, img {
+    vertical-align: middle;
+}
+a, img {
+    border: 0;
+}
+
+.jd_fav_content {
+    flex: 1;
+    padding: 0 200px 0 35px;
+}
+.jd_fav_title {
+    line-height: 1.2;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.font24 {
+    font-size: 24px;
+}
+.fw700 {
+    font-weight: 600;
+}
+.font15 {
+    font-size: 15px;
+}
+
+.jd_fav_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease-in;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.jd_fav_removebin {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(SVGs/removebingrey_icon.svg);
+    background-size: 20px;
+    border-radius: 100%;
+    transform: scale(1);
+    transition: all .8s;
+}
+.jd_fav_removebin:hover {
+    transform: scale(.9);
+    transition: all .3s;
+    background-color: #eee;
+}
+
+
+/* ********** Responsive CSS ********* */
+@media (max-width: 992px){
+    .jdcontainer{
+        padding: 0 0;
+    }
+    .jd_fav_content {
+        padding: 0 22px 0 15px
+    }
+    .jd_favli {
+        padding: 17px 0;
+    }
+    .jd_favli .jd_fav_img {
+        height: 70px;
+        flex-basis: 70px;
+    }
+    .font24 {
+        font-size: 15px;
+    }
+    .fw700 {
+        font-weight: 500;
+    }
+    .jd_fav_removebin {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .font15 {
+        font-size: 12px;
+    }
+    .fw500 {
+        font-weight: 600;
+    }
+    
+    .font22 {
+        font-size: 17px;
+    }
+    .font16 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 576px){
+    .jd_favli .jd_fav_img {
+        height: 62px;
+        flex-basis: 62px;
+    }
+
+}
