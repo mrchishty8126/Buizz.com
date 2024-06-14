@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8d8d8;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #111;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="close-icn" transform="translate(-4445 -1737)">
+    <g id="Close" transform="translate(4445 1737)">
+      <path id="Rectangle_6268" data-name="Rectangle 6268" class="cls-1" d="M0,0H24V24H0Z"/>
+      <path id="Path_142823" data-name="Path 142823" class="cls-2" d="M-8057-6430l-6,6,6-6-6-6,6,6,6-6-6,6,6,6Z" transform="translate(8069.5 6441.5)"/>
+    </g>
+  </g>
+</svg>
