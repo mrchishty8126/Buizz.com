@@ -1,0 +1,29 @@
+<svg id="mail" xmlns="http://www.w3.org/2000/svg" width="20.1" height="21" viewBox="0 0 20.1 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0000;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #0F76D7;
+        stroke: #0F76D7;
+        stroke-width: 0.2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_79586" data-name="Rectangle 79586" class="cls-1" width="20" height="20"/>
+  <g id="Group_154769" data-name="Group 154769" transform="translate(-4818 6315)">
+    <g id="phone-message" transform="translate(4814 -6318)">
+      <rect id="Rectangle_79587" data-name="Rectangle 79587" class="cls-2" width="20" height="20" transform="translate(4 4)"/>
+      <path id="path4" class="cls-3" d="M19.346,8.693h2.077a.346.346,0,0,0,0-.692H19.346a.346.346,0,0,0,0,.692Z" transform="translate(-8.5 -2.616)"/>
+      <path id="path8" class="cls-3" d="M17.077,20.615V19.23a.346.346,0,0,1,.692,0v2.423a1.73,1.73,0,0,1-1.731,1.731H7.73A1.731,1.731,0,0,1,6,21.654V5.73A1.731,1.731,0,0,1,7.73,4h8.308A1.73,1.73,0,0,1,17.769,5.73V8.846a.346.346,0,0,1-.692,0V7.462H6.692V20.615Zm0,.692H6.692v.346A1.038,1.038,0,0,0,7.73,22.692h8.308a1.039,1.039,0,0,0,1.038-1.038Zm0-14.538V5.73a1.039,1.039,0,0,0-1.038-1.038H7.73A1.038,1.038,0,0,0,6.692,5.73V6.769Z"/>
+      <path id="path10" class="cls-3" d="M34.461,22.038A1.039,1.039,0,0,0,33.423,21H23.038A1.039,1.039,0,0,0,22,22.038v6.231a1.039,1.039,0,0,0,1.038,1.038H33.423a1.039,1.039,0,0,0,1.038-1.038ZM26.967,25.6,23.29,28.615h9.842L29.489,25.6l-1.038.855a.347.347,0,0,1-.44,0Zm3.067-.444,3.736,3.087V22.079Zm-7.341,3.055,3.73-3.06-3.73-3.072Zm5.538-2.467,4.92-4.052h-9.84Z" transform="translate(-10.462 -11.115)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #0F76D7;
+      }
+    </style>
+  </defs>
+  <g id="SMS" transform="translate(-919 -795)">
+    <rect id="Rectangle_6580" data-name="Rectangle 6580" class="cls-1" width="22" height="22" transform="translate(919 795)"/>
+    <g id="mail" transform="translate(921 723.672)">
+      <g id="Group_154699" data-name="Group 154699" transform="translate(0 76)">
+        <path id="Path_155306" data-name="Path 155306" class="cls-2" d="M16.418,76H1.582A1.584,1.584,0,0,0,0,77.582v9.492a1.584,1.584,0,0,0,1.582,1.582H16.418A1.584,1.584,0,0,0,18,87.074V77.582A1.584,1.584,0,0,0,16.418,76ZM16.2,77.055,10.119,83.1a1.582,1.582,0,0,1-2.238,0L1.8,77.055ZM1.055,86.86V77.8l4.558,4.534Zm.75.742L6.36,83.075l.776.771a2.637,2.637,0,0,0,3.728,0l.776-.772L16.2,87.6Zm15.141-.742-4.558-4.529L16.945,77.8Z" transform="translate(0 -76)"/>
+      </g>
+    </g>
+  </g>
+</svg>

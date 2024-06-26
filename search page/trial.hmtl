@@ -1,0 +1,64 @@
+ <!-- All Filters Offcanvas Button -->
+            <button class="btn filter-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtersOffcanvas"
+                aria-controls="filtersOffcanvas"><img
+                src="/search page/SVGs/all_filters_icon.svg" class="business-svgs filter-svg" width="15"
+                height="15" />
+                All Filters
+            </button>
+        </div>
+
+        <!-- Filters Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="filtersOffcanvas"
+            aria-labelledby="filtersOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 id="filtersOffcanvasLabel">All Filters</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Quick Filters -->
+                <div class="mb-3">
+                    <h6>Quick Filters:</h6>
+                    <button class="btn btn-outline-primary mb-2">Top Rated</button>
+                </div>
+
+                <!-- Sort by Filters -->
+                <div class="mb-3">
+                    <h6>Sort by:</h6>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio1">Relevance</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Rating</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Popular</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio4">Distance</label>
+                    </div>
+                </div>
+
+                <!-- Ratings Filters -->
+                <div class="mb-3">
+                    <h6>Ratings:</h6>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck1">3.5+</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">4.0+</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck3">4.5+</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck4">5.0</label>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer p-3 border-top">
+                <button type="button" class="btn btn-primary me-2">Apply</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+            </div>
+        </div>
