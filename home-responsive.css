@@ -317,6 +317,11 @@
     width: 100%;
   }
 
+  /* *********** Products ********* */
+  .product-card .card-content {
+    padding: 25px !important;
+    padding-bottom: 15px !important;
+}
 
 
   /* ********************* */
