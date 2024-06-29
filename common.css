@@ -408,8 +408,8 @@ footer {
 
   .profile-img {
     object-fit: cover;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
   }
 
   .offcanvas-end {
