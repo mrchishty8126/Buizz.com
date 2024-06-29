@@ -74,12 +74,12 @@
     padding: 0;
     margin-top: 20px;
   }
-
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   #header .container a img {
-    width: 100%;
+    width: auto;
+    height: 35px;
   }
 
   #header .collapse a {
@@ -109,8 +109,6 @@
     padding: 50px 22px;
   }
 
-
-  
   /* ************ Quick View ************* */
   .prod-info-qk-vw {
     margin-top: 35px !important;
@@ -152,7 +150,6 @@
     padding: 20px 20px 40px !important;
   }
 
-
   /* ****************** Mobile Off-canvas ********************** */
   .menublock {
     display: inline-block;
@@ -170,7 +167,6 @@
     /* Firefox */
   }
 
-
   .menublock::-webkit-scrollbar {
     display: none;
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -178,8 +174,8 @@
 
   .profile-img {
     object-fit: cover;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
   }
 
   .offcanvas-end {
@@ -208,8 +204,6 @@
   .font13 {
     font-size: 13px;
   }
-
-
 
   .navlist {
     background: #fff;
@@ -265,7 +259,7 @@
     background-repeat: no-repeat;
   }
 
-  .navlist li span+span {
+  .navlist li span + span {
     padding-left: 15px;
     font-weight: 500;
   }
@@ -321,11 +315,9 @@
   .product-card .card-content {
     padding: 25px !important;
     padding-bottom: 15px !important;
-}
-
+  }
 
   /* ********************* */
-
 }
 
 /* **************************** */
@@ -343,13 +335,14 @@
 
 /* **************************** */
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #header .container {
     margin: 0px 5px;
   }
 
   #header .container a img {
-    width: 100%;
+    width: auto;
+    height: 35px;
   }
 
   #header .collapse a {
@@ -385,7 +378,4 @@
   .categ-mt5 {
     margin-top: 0 !important;
   }
-
 }
-
-  
