@@ -43,10 +43,14 @@ section {
 
 button {
   border: none;
+  background-color: #ffffff00;
+}
+
+.download-btn {
   transition: all 0.5s;
 }
 
-button:hover {
+.download-btn:hover {
   box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -104,4 +108,64 @@ p {
   align-items: flex-start;
   justify-content: center;
   padding-left: 100px;
+}
+
+
+/* **************** Responsive CSS ******************* */
+@media (max-width: 992px) {
+  h3 {
+    font-size: 24px;
+  }
+
+  .first-sec-content {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 35px;
+  }
+
+  .second-sec-content {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .first-sec-img-col {
+    justify-content: center;
+  }
+
+  .img-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .android-img {
+    width: 65%;
+  }
+
+  .section-1 {
+    background-image: url(images/hero-bg-download-app-2.0-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .section-2 {
+    background-image: url(images/hero-bg-download-app-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h5 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 }
