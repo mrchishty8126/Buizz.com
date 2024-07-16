@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #222021;
+    --secondary-color: #066cfa;
+}
+.cont-all{
+    padding: 30px 0 30px;
+}
+
+
+.contact-box {
+    background: #066cfa;
+    padding: 80px 30px 80px 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.sec-title {
+    position: relative;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}
+
+.sec-title .sub-text.new-text {
+    padding-left: 0;
+    margin-bottom: 7px;
+    color: #ffffff;
+}
+
+.sec-title .sub-text {
+    position: relative;
+    padding-left: 95px;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #03228F;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.white-color {
+    color: #ffffff !important;
+}
+
+.sec-title .title.white-color {
+    color: #ffffff;
+}
+
+.sec-title .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #101010;
+    margin: 0;
+}
+
+
+.contact-box .address-box {
+    display: flex;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.contact-box .address-box .address-icon {
+    background-color: #ffffff !important;
+    min-width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 23px;
+}
+
+.contact-box .address-box .address-icon i {
+    font-size: 20px;
+    line-height: 20px;
+    color: #03228F;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.contact-box .address-box .address-text .label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-box .address-box .address-text a {
+    color: #ffffff;
+}
+
+.contact-box .address-box .address-text .desc {
+    color: #ffffff;
+}
+
+a {
+    color: #106eea;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+
+
+.pl-70 {
+    padding-left: 70px;
+}
+.sec-title2 {
+    position: relative;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.sec-title2 .sub-text.contact {
+    color: #1273EB;
+}
+
+.sec-title2 .sub-text {
+    margin: 0 0 10px;
+    display: block;
+    line-height: 28px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #03228F;
+    text-transform: uppercase;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.sec-title2 .title.testi-title {
+    max-width: unset;
+}
+
+.sec-title2 .title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #0a0a0a;
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.contact-widget .from-control {
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    background-color: #F6F7F9;
+    width: 100%;
+    max-width: 100%;
+}
+.rs-contact .contact-widget textarea {
+    height: 120px;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.submit {
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 18px 40px 17px 40px;
+    font-size: 15px;
+    line-height: 1;
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+}
+.readon.learn-more.submit:hover {
+    background: #005bda;
+    color: #ffffff;
+}
+.readon {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s;
+    z-index: 1;
+    background-color: transparent;
+}
+
+
+.readon.learn-more.submit {
+    background: #066cfa;
+    padding: 16px 40px 16px 40px;
+    font-weight: 500;
+    font-size: 16px;
+}
