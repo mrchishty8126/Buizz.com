@@ -112,10 +112,12 @@ body {
 
 .contact-box .address-box .address-text a {
     color: #ffffff;
+    font-size: 16px;
 }
 
 .contact-box .address-box .address-text .desc {
     color: #ffffff;
+    font-size: 16px;
 }
 
 a {
@@ -190,6 +192,7 @@ fieldset {
 }
 
 .contact-widget .from-control {
+    font-size: 16px;
     padding: 20px 20px 20px 20px;
     border-radius: 5px 5px 5px 5px;
     border-style: solid;
@@ -226,7 +229,7 @@ fieldset {
 }
 
 .readon.learn-more.submit:hover {
-    background: #005bda;
+    background: #0550b9;
     color: #ffffff;
 }
 
@@ -265,11 +268,6 @@ fieldset {
         margin-bottom: 60px;
     }
 
-    .contact-box .address-box .address-text a,
-    .contact-box .address-box .address-text .desc {
-        font-size: 16px;
-    }
-
     .sec-title .sub-text.new-text {
         font-weight: 300;
         margin-bottom: 5px;
@@ -281,9 +279,6 @@ fieldset {
         line-height: 1.4;
     }
 
-    .contact-widget .from-control {
-        font-size: 16px;
-    }
     .md-pl-15 {
         padding-left: 15px;
     }
