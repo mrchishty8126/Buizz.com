@@ -169,20 +169,6 @@ option:hover {
     color: #0076d7;
 }
 
-.buizz-trust {
-    font-size: 13px;
-    display: flex;
-    height: 25px !important;
-    align-items: center;
-}
-
-.buizz-verified {
-    font-size: 13px;
-    display: flex;
-    height: 25px !important;
-    align-items: center;
-}
-
 /* ************************ Product Section CSS ***************************** */
 
 .product-sec {
@@ -306,9 +292,6 @@ a i {
 }
 .product-name{
     margin-bottom: 0 !important;
-}
-.btn-vt{
-    margin-top: 5px;
 }
 
 /* ******** Single Product ********* */
